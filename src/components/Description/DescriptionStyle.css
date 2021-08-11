@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #1f3247;
+  --secondary-color: #8694a2;
+  --big-space: 40px;
+  --little-space: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--big-space);
+
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+
+.avatar {
+  width: 200px;
+  height: 300px;
+}
+
+.name {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: var(--little-space);
+}
+
+.tag {
+  margin-bottom: var(--little-space);
+}

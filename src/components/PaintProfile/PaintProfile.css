@@ -1,0 +1,25 @@
+:root {
+  --primary-bgc: #e8edf3;
+  --card-bgc: #fff;
+  --secondary-color: #8694a2;
+
+  --big-space: 40px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-bgc);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--big-space);
+
+  width: fit-content;
+  height: fit-content;
+
+  background-color: var(--card-bgc);
+}
