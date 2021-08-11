@@ -1,0 +1,10 @@
+.stat-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
