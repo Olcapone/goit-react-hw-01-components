@@ -2,9 +2,7 @@ import PropTypes from "prop-types";
 import s from "./TransactionItem.module.css";
 import React, { Fragment } from "react";
 
-export default function TransactionItem(transactions) {
-  const { type, amount, currency } = transactions;
-
+export default function TransactionItem({ type, amount, currency }) {
   return (
     <Fragment>
       <td className={s.data}>{type}</td>

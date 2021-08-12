@@ -2,9 +2,7 @@ import PropTypes from "prop-types";
 import React, { Fragment } from "react";
 import s from "./FriendListItem.module.css";
 
-export default function FriendListItem({ ...friends }) {
-  const { isOnline, avatar, name } = friends;
-
+export default function FriendListItem({ isOnline, avatar, name }) {
   return (
     <Fragment>
       <span className={isOnline ? s.online : s.offline}></span>
