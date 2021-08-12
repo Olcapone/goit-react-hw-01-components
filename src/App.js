@@ -13,8 +13,8 @@ import transactionsData from "./transactions.json";
 export default function App() {
   return (
     <Fragment>
-      <PaintProfile {...userData} />
-      <Statistic options={statisticlData} />
+      <PaintProfile items={userData} />
+      <Statistic title="Upload stats" options={statisticlData} />
       <FriendList friends={friendsData} />
       <TransactionHistory transactions={transactionsData} />
     </Fragment>

@@ -2,19 +2,16 @@ import Stats from "../Stats/Stats";
 import Description from "../Description/Description";
 import s from "./PaintProfile.module.css";
 
-export default function PaintProfile({ ...props }) {
+export default function PaintProfile({ items }) {
+  const { avatar, name, tag, location, stats } = items;
+
   return (
     <div className={s.profile}>
-      <Description
-        avatar={props.avatar}
-        name={props.name}
-        tag={props.tag}
-        location={props.location}
-      />
+      <Description avatar={avatar} name={name} tag={tag} location={location} />
       <Stats
-        followers={props.stats.followers}
-        views={props.stats.views}
-        likes={props.stats.likes}
+        followers={stats.followers}
+        views={stats.views}
+        likes={stats.likes}
       />
     </div>
   );

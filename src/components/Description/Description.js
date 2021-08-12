@@ -6,7 +6,7 @@ export default function Description({ avatar, name, tag, location }) {
     <div className={s.description}>
       <img src={avatar} alt="Аватар пользователя" className={s.avatar} />
       <p className={s.name}>{name}</p>
-      <p className={s.tag}>{tag}</p>
+      <p className={s.tag}>@{tag}</p>
       <p className={s.location}>{location}</p>
     </div>
   );

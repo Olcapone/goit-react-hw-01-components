@@ -7,9 +7,9 @@ export default function TransactionItem(transactions) {
 
   return (
     <Fragment>
-      <td class={s.data}>{type}</td>
-      <td class={s.data}>{amount}</td>
-      <td class={s.data}>{currency}</td>
+      <td className={s.data}>{type}</td>
+      <td className={s.data}>{amount}</td>
+      <td className={s.data}>{currency}</td>
     </Fragment>
   );
 }
