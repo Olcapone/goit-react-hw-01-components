@@ -23,14 +23,15 @@ ul {
   display: flex;
 
   color: var(--secondary-color);
-  font-size: 24px;
+  font-size: 18px;
   list-style: none;
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  padding: var(--little-space) var(--big-space);
+  width: 100px;
+  padding: 10px 0px;
   border-top: 1px solid var(--secondary-color);
   background-color: var(--secondary-card-bgc);
   text-align: center;

@@ -1,0 +1,20 @@
+.span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin: 0;
+}
+
+.online {
+  composes: span;
+  background-color: green;
+}
+.offline {
+  composes: span;
+  background-color: red;
+}
+
+.avatar {
+  margin: 0px 10px;
+}
