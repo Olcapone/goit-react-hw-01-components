@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-import "./DescriptionStyle.css";
+import s from "./Description.module.css";
 
 export default function Description({ avatar, name, tag, location }) {
   return (
-    <div className="description">
-      <img src={avatar} alt="Аватар пользователя" className="avatar" />
-      <p className="name">{name}</p>
-      <p className="tag">{tag}</p>
-      <p className="Location">{location}</p>
+    <div className={s.description}>
+      <img src={avatar} alt="Аватар пользователя" className={s.avatar} />
+      <p className={s.name}>{name}</p>
+      <p className={s.tag}>{tag}</p>
+      <p className={s.location}>{location}</p>
     </div>
   );
 }

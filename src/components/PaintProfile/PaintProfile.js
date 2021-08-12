@@ -1,10 +1,10 @@
 import Stats from "../Stats/Stats";
 import Description from "../Description/Description";
-import "./PaintProfile.css";
+import s from "./PaintProfile.module.css";
 
 export default function PaintProfile({ ...props }) {
   return (
-    <div className="profile">
+    <div className={s.profile}>
       <Description
         avatar={props.avatar}
         name={props.name}

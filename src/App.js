@@ -1,3 +1,5 @@
+import React, { Fragment } from "react";
+
 import "./App.css";
 import PaintProfile from "./components/PaintProfile/PaintProfile";
 import Statistic from "./components/Statistic/Statistic";
@@ -6,9 +8,9 @@ import statisticalData from "./statisticsData.json";
 
 export default function App() {
   return (
-    <div>
+    <Fragment>
       <PaintProfile {...userData} />
       <Statistic options={statisticalData} />
-    </div>
+    </Fragment>
   );
 }

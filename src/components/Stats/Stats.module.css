@@ -27,7 +27,7 @@ ul {
   list-style: none;
 }
 
-.stats-item {
+.item {
   display: flex;
   flex-direction: column;
   padding: var(--little-space) var(--big-space);
@@ -36,7 +36,7 @@ ul {
   text-align: center;
 }
 
-.stats-item:not(:last-child) {
+.item:not(:last-child) {
   border-right: 1px solid var(--secondary-color);
 }
 
