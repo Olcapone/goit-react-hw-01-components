@@ -7,6 +7,8 @@ import Statistic from "./components/Statistic/Statistic";
 import statisticlData from "./statisticsData.json";
 import FriendList from "./components/FriendList/FriendList";
 import friendsData from "./friends.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import transactionsData from "./transactions.json";
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
       <PaintProfile {...userData} />
       <Statistic options={statisticlData} />
       <FriendList friends={friendsData} />
+      <TransactionHistory transactions={transactionsData} />
     </Fragment>
   );
 }

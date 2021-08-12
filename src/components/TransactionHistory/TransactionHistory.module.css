@@ -1,0 +1,17 @@
+.description {
+  background-color: #00bdd6;
+  color: #fff;
+}
+
+.row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.itemRow {
+  color: #1f3247;
+}
+
+.itemRow:nth-child(2n) {
+  background: #ecf1f4;
+}
