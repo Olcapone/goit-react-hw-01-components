@@ -4,20 +4,20 @@ import s from "./Statistic.module.css";
 import StatisticTitle from "../StatisticTitle/StatisticTitle";
 import StatItem from "../StatItem/StatItem";
 
-export default function Statistic({ title, options }) {
+export default function Statistic({ title, stats }) {
   let color = randomColor();
   return (
     <section className={s.statistics}>
       <StatisticTitle title={title} />
 
       <ul className={s.list}>
-        {options.map((option) => (
+        {stats.map((stat) => (
           <li
             className={s.item}
-            key={option.id}
+            key={stat.id}
             style={{ backgroundColor: color }}
           >
-            <StatItem label={option.label} percentage={option.percentage} />
+            <StatItem label={stat.label} percentage={stat.percentage} />
           </li>
         ))}
       </ul>
@@ -26,7 +26,7 @@ export default function Statistic({ title, options }) {
 }
 
 Statistic.propTypes = {
-  options: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
     })
